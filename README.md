@@ -42,9 +42,9 @@ This section references to `/packages/participant-cc/src` and `packages/product-
 > In this case both chaincodes get bundled into one called `identities` through the file `./org1.identities.config.json` in the "Controllers" section. This pattern allows you to develop each part independently but when deploying keep them in the same package.
 
 It is a common pattern to reflect a CA identity in a chaincode accessible way.
-These identities do not replace Fabric identities, on the contraire, it leverages them to work in business use cases.
+These identities do not replace Fabric identities, on the contrary, it leverages them to work in business use cases.
 
-The logic is - the user/identity is a Fabric CA identity with all the benefits a Certificate Authority can bring regarding enrollment, revokation and so on. The `participant-cc` chaincode allows you to reflect "that" identity in the ledger so that you can do things like access control. For example, just `identityA` from `Walmart` can approve a transaction.
+The logic is - the user/identity is a Fabric CA identity with all the benefits a Certificate Authority can bring regarding enrollment, revocation and so on. The `participant-cc` chaincode allows you to reflect "that" identity in the ledger so that you can do things like access control. For example, just `identityA` from `Walmart` can approve a transaction.
 
 ```ts
 @ReadOnly()
